@@ -1,7 +1,7 @@
 let cityName
 
 const weather = async function(){
-    let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=4cc82568bdf18af4e44da217ca2e562a&units=metric`)
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=4cc82568bdf18af4e44da217ca2e562a&units=metric`)
     if(response.status === 200) {
         const data = await response.json()
         return data
